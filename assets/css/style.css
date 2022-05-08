@@ -1,0 +1,96 @@
+/* Semi Bold Font*/
+@font-face{
+	font-family: "Poppins-SemiBold";
+	src: url("../font/Poppins-SemiBold.ttf");
+}
+
+/* Regular Font */
+@font-face{
+	font-family: "Poppins-Regular";
+	src: url("../font/Poppins-Regular.ttf");
+}
+
+body{
+	background-color: #F6F8FD;
+}
+.header .container .navbar{
+	font-family: "Poppins-SemiBold";
+	justify-content: center;
+	padding: 10px 0;
+}
+.content{
+	margin-top: 100px;
+}
+.content .container .row .col{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.content .container .socialmedia ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	margin-right: 30px;
+}
+.content .container .socialmedia ul li{
+	padding: 0;
+	margin: 10px 6px;
+	list-style: none;
+	transition: all .5s ease;
+}
+.content .container .socialmedia ul li:hover{
+	transform: scale(1.03);
+}
+.content .container .card{
+	border: none;
+}
+.content .container .card .card-body{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.content .container a{
+	text-decoration: none;
+	transition: all .5s ease;
+	color: #000;
+}
+.content .container a:hover .card{
+	transform: scale(1.02);
+	background-color: #00ffcc;
+}
+
+/* Responsive */
+
+/* Small devices*/
+@media only screen and (max-width: 600px) {
+	.content .container .card .card-body img{
+		width: 60px;
+	}
+	.content .container .socialmedia ul li a img{
+		width: 40px;
+	}
+} 
+
+/* Medium devices*/
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+	.content .container .card .card-body img{
+		width: 80px;
+	}
+	.content .container .socialmedia ul li a img{
+		width: 45px;
+	}
+} 
+
+/* Large devices */
+@media only screen and (min-width: 768px) {
+	.content .container .card .card-body img{
+		width: 100px;
+	}
+	.content .container .socialmedia ul li a img{
+		width: 50px;
+	}
+} 
